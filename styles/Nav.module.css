@@ -1,0 +1,31 @@
+ .nav{
+    height: 132px;
+    padding: 0px 50px;
+    background: #fff;
+    color: #fff;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul li a{
+    margin: 5px 15px;
+    color: #000;
+}
+
+.cta{
+  height: 50px;
+  min-width: 211px;
+  background-color: #00923f;
+  color: #fff !important;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
