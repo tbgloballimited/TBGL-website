@@ -4,7 +4,7 @@ const Header = () => {
   return (
       <>
         <section className={headerStyles.hero} >
-            <h1 className={headerStyles.text}>Go Solar in Nigeria</h1>
+            <h1 className={headerStyles.text}>Let your power problem be our problem.</h1>
             <div className={headerStyles.description}>Having unstable and high cost of power generation is 
             not fun.</div>
             <div className={headerStyles.description}> 
