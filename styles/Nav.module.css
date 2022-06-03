@@ -1,11 +1,14 @@
  .nav{
     height: 132px;
     padding: 0px 50px;
-    background: #fff;
+    background: #ffffff63;
     color: #fff;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 0;
 }
 
 .nav ul {
@@ -17,7 +20,7 @@
 
 .nav ul li a{
     margin: 5px 15px;
-    color: #000;
+    color: #fff;
 }
 
 .cta{

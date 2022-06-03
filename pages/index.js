@@ -1,6 +1,7 @@
 import styles from '../styles/Layout.module.css'
 // import ArticleList from '../components/ArticleList'
 // import {server} from '../config'
+import Meta from '../components/Meta'
 import Header from '../components/Header'
 import Image from 'next/image'
 import WhyChooseUs from '../components/WhyChooseUs'
@@ -13,6 +14,8 @@ export default function Home() {
   
   return (
     <>
+    <Meta title='Home - Tunde Ben Global Limited' />
+    
     <Header />
     <div className={styles.containerAbout}>
         {/* <ArticleList articles={articles} /> */}

@@ -56,6 +56,10 @@
     flex-direction: column;
     color: #fff;
     width: 100%;
+    cursor: pointer;
+  }
+  .top_footer li:hover{
+    color: #3f3f3f;
   }
   .top_footer li:nth-child(1){
     font-size: 30px;

@@ -10,6 +10,8 @@ import Clients from '../components/Clients'
 const projects = () => {
   return (
     <>
+    <Meta title='Projects | Tunde Ben Global Limited' />
+    
         <section className={styles.hero} >
             <h1 className={styles.heroText}>Our projects</h1>
             <div className={styles.breadcrumb}>

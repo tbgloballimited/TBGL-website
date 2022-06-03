@@ -31,18 +31,18 @@
   }
 
   .text{
-    color: #fff; 
-    font-family: DM Serif Display,sans-serif;
+    color: #fff;
+    font-family: DM Sans,sans-serif;
     font-size: 56px;
-    font-weight: 400;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.16;
+    line-height: 1.0;
     letter-spacing: normal;
     text-align: left;
     color: #fff;
-    margin: 0;
-    width: 635px;
+    margin: 10px 0px;
+    width: 665px;
   }
 
   .cta{
@@ -61,12 +61,14 @@
     align-self: stretch;
     flex-grow: 0;
     font-family: 'DM Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.41;
+    line-height: 1.2;
     letter-spacing: normal;
     text-align: left;
     color: #fff;
+    width: 505px;
+    margin-bottom: 20px;
   }

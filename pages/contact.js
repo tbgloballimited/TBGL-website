@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 const contact = () => {
   return (
     <>
-        <Meta title='Services - Tunde Ben Global Limited' />
+        <Meta title='Contact | Tunde Ben Global Limited' />
         <section className={styles.hero} >
             <h1 className={styles.heroText}>Contact Us</h1>
             <div className={styles.breadcrumb}>

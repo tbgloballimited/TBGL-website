@@ -74,7 +74,8 @@
     padding: 18px 171px 17px;
     background-color: #00923f;
     color: #fff;
+    border: none;
 }
 .contact_form textarea{
-    height: 300px;
+    height: 250px;
 }

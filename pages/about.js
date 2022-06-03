@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 export default function about() {
   return (
     <>
-      <Meta title='About - Tunde Ben Global Limited' />
+      <Meta title='About | Tunde Ben Global Limited' />
 
       <section className={styles.hero} >
           <h1 className={styles.heroText}>About Us</h1>

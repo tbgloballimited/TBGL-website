@@ -8,7 +8,7 @@ import Faq from '../components/Faq'
 const services = () => {
   return (
     <>
-    <Meta title='Services - Tunde Ben Global Limited' />
+    <Meta title='Services | Tunde Ben Global Limited' />
     
     <section className={styles.hero} >
           <h1 className={styles.heroText}>Services</h1>

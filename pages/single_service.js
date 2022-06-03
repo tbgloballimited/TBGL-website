@@ -8,7 +8,7 @@ import Faq from '../components/Faq'
 const singleService = () => {
   return (
       <>
-      <Meta title='Single Services - Tunde Ben Global Limited' />
+      {/* <Meta title='Single Services - Tunde Ben Global Limited' /> */}
       
         <section className={styles.hero_single} >
           <h1 className={styles.heroText}>DESIGN</h1>

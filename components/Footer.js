@@ -1,4 +1,5 @@
 import styles from '../styles/Footer.module.css'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -31,24 +32,32 @@ const Footer = () => {
                 <ul>
                     <li>Quick links</li>
                     <li>
-                    <span>
-                        Blog
-                    </span>
+                        <Link href='/about'>
+                            <span>
+                                About
+                            </span>
+                        </Link>
                     </li>
                     <li>
-                    <span>
-                        About
-                    </span>
+                        <Link href='/projects'>
+                            <span>
+                                Projects
+                            </span>
+                        </Link>
                     </li>
                     <li>
-                    <span>
-                        Projects
-                    </span>
+                        <Link href='/products'>
+                            <span>
+                                Shop
+                            </span>
+                        </Link>
                     </li>
                     <li>
-                    <span>
-                        Faq
-                    </span>
+                        <Link href='/contact'>
+                            <span>
+                                Contact
+                            </span>
+                        </Link>
                     </li>
                 </ul>
                 <ul>
