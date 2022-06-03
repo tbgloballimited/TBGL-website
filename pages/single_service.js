@@ -45,6 +45,76 @@ const singleService = () => {
             <Image src='/img/petrocam.png' alt='design' height='465' width='744' />
           </div>
         </section>
+        <section className={styles.single_process_container}>
+          <div className={styles.contact_cta}>
+              <h2>Our Contact</h2>
+              <p>We complete every step carefully. Lorem 
+                ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+              <hr />
+              <div className={styles.contact_cta_details}>
+                <Image src='/img/service_icon.png' alt='service icon' height='49' width='49' />
+                <h5>(+234)-706-796-5229<br /><br />
+                (+234)-808-353-4530</h5>
+              </div>
+              <div className={styles.contact_cta_details}>
+                <Image src='/img/service_icon.png' alt='service icon' height='49' width='49' />
+                <h5>hello@tbgl.com.ng</h5>
+              </div>
+              <div className={styles.contact_cta_details}>
+                <Image src='/img/service_icon.png' alt='service icon' height='49' width='49' />
+                <h5>Block A Plot 8a, Laderin <br />
+                Estate, Abeokuta, Ogun State, Nigeria.
+                <br /><br />
+                Generation Homes Estate, <br />
+                Kuje, Abuja.
+                </h5>
+              </div>
+          </div>
+          <div className={styles.process_list}>
+            <h2>How We Work</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                  elit. Dignissim ornare quis vestibulum neque. 
+                  Tristique massa accumsan tempus in massa non, proin. 
+                  Elementum rhoncus massa mauris adipiscing sem 
+                  vestibulum quam mattis. Nec enim nec tellus elit ac 
+                  sed integer. Elementum aliquet sed donec sit mauris 
+                  pulvinar lacus bibendum.</p>
+              <div className={styles.process_list_details}>
+                <Image src='/img/service_icon.png' alt='service icon' height='49.1' width='49.2' />
+                <h5>Consultation</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                  elit. Dignissim ornare quis vestibulum neque. 
+                  Tristique massa accumsan tempus in massa non, proin. 
+                  Elementum rhoncus massa mauris adipiscing sem 
+                  vestibulum quam mattis. Nec enim nec tellus elit ac 
+                  sed integer. Elementum aliquet sed donec sit mauris 
+                  pulvinar lacus bibendum.</p>
+              </div>
+              <div className={styles.process_list_details}>
+                <Image src='/img/service_icon.png' alt='service icon' height='49.1' width='49.2' />
+                <h5>Design</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                  elit. Dignissim ornare quis vestibulum neque. 
+                  Tristique massa accumsan tempus in massa non, proin. 
+                  Elementum rhoncus massa mauris adipiscing sem 
+                  vestibulum quam mattis. Nec enim nec tellus elit ac 
+                  sed integer. Elementum aliquet sed donec sit mauris 
+                  pulvinar lacus bibendum.</p>
+              </div>
+              <div className={styles.process_list_details}>
+                <Image src='/img/service_icon.png' alt='service icon' height='49.1' width='49.2' />
+                <h5>Installation</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                  elit. Dignissim ornare quis vestibulum neque. 
+                  Tristique massa accumsan tempus in massa non, proin. 
+                  Elementum rhoncus massa mauris adipiscing sem 
+                  vestibulum quam mattis. Nec enim nec tellus elit ac 
+                  sed integer. Elementum aliquet sed donec sit mauris 
+                  pulvinar lacus bibendum.</p>
+              </div>
+          </div>
+        </section>
         <Faq />
         <FooterCta />
         <Footer />

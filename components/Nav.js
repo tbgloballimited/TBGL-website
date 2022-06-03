@@ -19,14 +19,14 @@ const Nav = () => {
                 <Link href='/services'>SERVICES</Link>
             </li>
             <li>
-                <Link href='/about'>PROJECTS</Link>
+                <Link href='/projects'>PROJECTS</Link>
             </li>
             <li>
-                <Link href='/about'>PRODUCTS</Link>
+                <Link href='/products'>PRODUCTS</Link>
             </li>
         </ul>
         <ul className='nav-cta'>
-          <button className={navStyles.cta}>GET IN TOUCH</button>
+        <Link href='/contact'><button className={navStyles.cta}>GET IN TOUCH</button></Link>
         </ul>
     </nav>
   )

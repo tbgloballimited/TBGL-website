@@ -3,8 +3,11 @@ import styles from '../styles/Layout.module.css'
 // import {server} from '../config'
 import Header from '../components/Header'
 import Image from 'next/image'
+import WhyChooseUs from '../components/WhyChooseUs'
 import FooterCta from '../components/FooterCta'
 import Footer from '../components/Footer'
+import Clients from '../components/Clients'
+import Testimonial from '../components/Testimonial'
 
 export default function Home() {
   
@@ -121,78 +124,9 @@ export default function Home() {
       </ul>
     </div>
 
-    <div className={styles.containerClients}>
-      <h4 style={{color: '#00923f'}}>OUR CLIENTS</h4>
-      <h1>We Have Worked With Some <br />Awesome Brands</h1>
-      <ul>
-        <li>
-          <Image src='/img/clientlogo.png' alt="tbgl logo" height='40' width='192' />
-        </li>
-        <li>
-          <Image src='/img/clientlogo.png' alt="tbgl logo" height='40' width='192' />
-        </li>
-        <li>
-          <Image src='/img/clientlogo.png' alt="tbgl logo" height='40' width='192' />
-        </li>
-        <li>
-          <Image src='/img/clientlogo.png' alt="tbgl logo" height='40' width='192' />
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <Image src='/img/clientlogo.png' alt="tbgl logo" height='40' width='192' />
-        </li>
-        <li>
-          <Image src='/img/clientlogo.png' alt="tbgl logo" height='40' width='192' />
-        </li>
-        <li>
-          <Image src='/img/clientlogo.png' alt="tbgl logo" height='40' width='192' />
-        </li>
-        <li>
-          <Image src='/img/clientlogo.png' alt="tbgl logo" height='40' width='192' />
-        </li>
-      </ul>
-    </div>
-
-    <div className={styles.containerTestimonial}>
-      <h4 style={{color: '#fff'}}>TESTIMONIAL</h4>
-      <h1 style={{color: '#fff'}}>What They Said About Us</h1>
-      <div className={styles.testimonialSlider}>
-        <div className={styles.testimonialDesc}>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-              ut labore et dolore magna aliqua.
-            </h4>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-              ut labore et dolore magna aliqua.
-            </h4>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-              ut labore et dolore magna aliqua.
-            </h4>
-            <h5>
-              John Doe
-            </h5>
-            <h5>
-              Managing Director, Petrocam Igando.
-            </h5>
-        </div>
-        <div className={styles.testimonialSlideImg}>
-          <Image src='/img/testimonial.png' alt='testimonial' height='557' width='483' />
-        </div>
-      </div>
-    </div>
-
-    <div className={styles.containerWhy}>
-      <h1 style={{color: '#000', marginBottom: '65px'}}>Why Choose Us</h1>
-      <div className={styles.WhyDescription}>
-        <h4>We give the best customer relationship management and customer satisfaction.</h4>
-        <h4>We bring in the best hands of professionalism to our design, construction &amp; commissioning of
-            the solar systems.</h4>
-        <h4>We educate our clients on solar system as a whole and let them understand how it works before
-            designing and installing a system for them.</h4>
-        {/* <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit </h4> */}
-      </div>
-    </div>
-
+    <Clients />
+    <Testimonial />
+    <WhyChooseUs />
     <FooterCta />
     <Footer />
     </>
