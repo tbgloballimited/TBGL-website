@@ -1,7 +1,7 @@
  .nav{
     height: 132px;
     padding: 0px 50px;
-    background: #ffffff63;
+    background: #87878763;
     color: #fff;
     display: flex;
     align-items: center;
@@ -9,6 +9,7 @@
     position: absolute;
     width: 100%;
     top: 0;
+    z-index: 999;
 }
 
 .nav ul {

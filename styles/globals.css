@@ -45,4 +45,5 @@ h6{
 }
 button{
   cursor: pointer;
+  border: none;
 }
