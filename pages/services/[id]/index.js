@@ -1,21 +1,24 @@
-import Meta from '../components/Meta'
-import styles from '../styles/Service.module.css'
+import Meta from '../../../components/Meta'
+import styles from '../../../styles/Service.module.css'
 import Image from 'next/image'
-import FooterCta from '../components/FooterCta'
-import Footer from '../components/Footer'
-import Faq from '../components/Faq'
+import FooterCta from '../../../components/FooterCta'
+import Footer from '../../../components/Footer'
+import Faq from '../../../components/Faq'
+import { server } from '../../../config'
+import Link from 'next/link'
 
-const singleService = () => {
+const service = ({service}) => {
+const images = service.images
   return (
       <>
       {/* <Meta title='Single Services - Tunde Ben Global Limited' /> */}
       
         <section className={styles.hero_single} >
-          <h1 className={styles.heroText}>DESIGN</h1>
+          <h1 className={styles.heroText}>{service.title}</h1>
           <div className={styles.breadcrumb}>
-            <div className={styles.heroDescription}>Home</div>
+            <div className={styles.heroDescription}><Link href='/'>Home</Link></div>
             <div className={styles.angleIcon}>&#12297; </div>
-            <div className={styles.heroDescription}>DESIGN</div>
+            <div className={styles.heroDescription}>{service.title}</div>
           </div>
         </section>
         <section className={styles.single_main}>
@@ -23,27 +26,29 @@ const singleService = () => {
           <div className={styles.single_list}>
             <h2>Other Services</h2>
             <div className={styles.single_item}>
-              <h5>DESIGN</h5>
+              <Link href='/services/1'><h5>DEVELOPMENT</h5></Link>
             </div>
             <div className={styles.single_item}>
-              <h5>DEVELOPMENT</h5>
+            <Link href='/services/2'><h5>DESIGN</h5></Link>
             </div>
             <div className={styles.single_item}>
-              <h5>EPC</h5>
+            <Link href='/services/3'><h5>EPC</h5></Link>
             </div>
             <div className={styles.single_item}>
-              <h5>O&M</h5>
+            <Link href='/services/4'><h5>O&M</h5></Link>
             </div>
           </div>
           <div className={styles.single_description}>
             <h4>OUR PROCESS</h4>
-            <h2>Design</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis elementum, nunc velit 
-              purus. Orci eros diam sagittis vel vel ac ultrices aliquam. Elementum tempor amet, sed pharetra 
-              quisque. Pulvinar dis non pellentesque rhoncus amet aliquam.
+            <h2>{service.title}</h2>
+            <p>{service.body}
             </p>
-            <Image src='/img/petrocam.png' alt='design' height='465' width='744' />
-          </div>
+            <div className={styles.image_grid}>
+                {/* {images.map((img) => {
+                <Image src={img} alt='design' height='425' width='346' />
+                })} */}
+            </div>
+        </div>
         </section>
         <section className={styles.single_process_container}>
           <div className={styles.contact_cta}>
@@ -122,4 +127,27 @@ const singleService = () => {
   )
 }
 
-export default singleService
+export const getServerSideProps = async (context) => {
+    const res = await fetch (`${server}/api/services/${context.params.id}`)
+    const service = await res.json()
+    
+    return {
+      props: {
+        service,
+      },
+    }
+  }
+  
+//   export const getStaticPaths = async() => {
+//     const res = await fetch(`${server}/api/services`)
+//     const services= await res.json()
+//     const ids = services.map((service) => service.id)
+//     const paths = ids.map((id) => ({param: {id: id.toString()}}))
+  
+//     return {
+//       paths,
+//       fallbalck: false,
+//     }
+//   }
+
+export default service

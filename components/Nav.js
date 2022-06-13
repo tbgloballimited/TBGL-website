@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <nav className = {navStyles.nav}>
         <ul className='nav-logo'>
-          <Image src={'/img/logo.jpg'} alt={'tbgl logo'} height={112} width={107} />
+          <Image src={'/img/logo.png'} alt={'tbgl logo'} height={112} width={107} />
         </ul>
         <ul className='nav-links'>
             <li>

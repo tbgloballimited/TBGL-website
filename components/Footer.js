@@ -9,24 +9,32 @@ const Footer = () => {
                 <ul>
                     <li>Services</li>
                     <li>
-                    <span>
-                        Design
-                    </span>
+                        <Link href='/services/1'>
+                            <span>
+                                Development
+                            </span>
+                        </Link>
                     </li>
                     <li>
-                    <span>
-                        Installation
-                    </span>
+                        <Link href='/services/2'>
+                            <span>
+                                Design
+                            </span>
+                        </Link>
                     </li>
                     <li>
-                    <span>
-                        Procurement
-                    </span>
+                        <Link href='/services/3'>
+                            <span>
+                                EPC
+                            </span>
+                        </Link>
                     </li>
                     <li>
-                    <span>
-                        Maintenance
-                    </span>
+                        <Link href='/services/4'>
+                            <span>
+                                O&M
+                            </span>
+                        </Link>
                     </li>
                 </ul>
                 <ul>
