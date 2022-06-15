@@ -240,7 +240,77 @@
 }
 
 @media (max-width:420px) {
+    .hero{
+        height: 185px;
+    }
     .containerAbout{
         padding: 0px 20px !important;
+        height: 750px;
+    }
+    .containerExperience{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px !important;
+    }
+    .containerAssymetric{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .containerAssymetric div:nth-child(1), .containerAssymetric div:nth-child(2){
+        width: 100%;
+        margin: 0px;
+    }
+    .containerVision{
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerVision h4:nth-child(1), .containerVision h4:nth-child(2){
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .containerSpecialist{
+        padding: 80px 10px;
+        height: auto;
+    }
+    .containerSpecialist .flex{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .containerSpecialist .flex ul{
+        padding-left: 15px;
+    }
+    .containerSpecialist .flex div{
+        width: 100%;
+    }
+    .containerTeam{
+        height: 1200px;
+        padding: 0px;
+    }
+    .containerTeam .team_cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+    }
+    .containerTeam .team_cards .card{
+        width: 45%;
+    }
+
+    .containerFaq{
+        padding: 80px 0px;
+        height: auto;
+        gap: 20px;
+    }
+    .containerFaq .faq_cta{
+        width: 100%;
+    }
+    .containerFaq .faq_dialogue{
+        width: 100%;
     }
 }

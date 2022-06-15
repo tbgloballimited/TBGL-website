@@ -268,6 +268,12 @@
     width: 100%;
   }
 
+
+  .containerProducts{
+    padding: 10px;
+    height: 1600px;
+  }
+
   .containerProcess{
     height: 900px;
   }
