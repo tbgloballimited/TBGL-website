@@ -1,0 +1,271 @@
+.hero{
+    width: 100%;
+    height: 620px;
+    background-image: url('/img/about_hero.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+.heroText{
+    color: #fff;
+    align-self: center;
+}
+.breadcrumb{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+.heroDescription{
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+.angleIcon{
+    color: #fff;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.containerAbout{
+    width: 100%;
+    height: 525px;
+    flex-grow: 0;
+    margin: 22px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #fff;
+    padding: 0px 275px;
+    line-height: 1.01;
+    gap: 15px;
+}
+.containerAbout h1{
+    font-size: 42px;
+    margin-bottom: 29px;
+}
+.containerAbout p{
+    margin: 10px 0px;
+    color: #3f3f3f;
+    line-height: 1.3;
+}
+
+.containerExperience{
+    width: 100%;
+    height: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0px 225px;
+}
+.containerAssymetric{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.containerAssymetric div:nth-child(1){
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.containerAssymetric div:nth-child(2){
+    margin: 347px 14px 135px 58px;
+    width: 400px;
+    height: 400px;
+}
+.containerVision{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.containerVision h4:nth-child(1){
+    width: 390px;
+    padding-right: 50px;
+}
+.containerVision h4:nth-child(2){
+    width: 390px;
+    padding-left: 50px;
+}
+.containerVision span{
+    font-weight: 500;
+}
+.containerVision h4{
+    font-weight: 500;
+    color: #3f3f3f;
+}
+
+.containerSpecialist{
+    background-color: rgba(0, 146, 63, 0.94);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    height: 798px;
+    color: #fff;
+    padding: 0px 215px;
+}
+.containerSpecialist .flex{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.containerSpecialist .flex h2{
+    margin-bottom: 20px;
+}
+.containerSpecialist .flex div{
+    width: 50%;
+    color: #fff;
+    font-weight: 500;
+}
+.containerSpecialist .flex div li{
+    padding: 5px 0px;
+}
+.containerSpecialist .bullet_list li{
+    padding: 5px 0px;
+}
+.containerSpecialist .bullet_list{
+    margin-top: 56px;
+    margin-left: -25px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.containerTeam{
+    width: 100%;
+    height: 998px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 215px;
+}
+.containerTeam .team_cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 20px;
+    margin-top: 60px;
+}
+.containerTeam .card{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    gap:10px;
+    text-align: center;
+}
+.containerTeam .card img{
+    border: 2px solid #00923f;
+}
+
+
+
+@media (max-width:420px) {
+    .hero{
+        height: 200px;
+        background-attachment: scroll;
+    }
+    .hero h1{
+      font-size: 32px;
+    }
+    .hero .heroDescription, .hero .angleIcon{
+      font-size: 16px;
+    }
+    .hero .breadcrumb{
+      margin-top: 10px;
+    }
+    .hero .heroDescription{
+      margin-top: 23px;
+    }
+    .hero .angleIcon{
+      margin-top: 20px;
+    }
+    .containerAbout{
+        padding: 0px 20px !important;
+        height: 750px;
+    }
+    .containerExperience{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px !important;
+    }
+    .containerAssymetric{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .containerAssymetric div:nth-child(1), .containerAssymetric div:nth-child(2){
+        width: 100%;
+        margin: 0px;
+    }
+    .containerVision{
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerVision h4:nth-child(1), .containerVision h4:nth-child(2){
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .containerSpecialist{
+        padding: 80px 20px;
+        height: auto;
+    }
+    .containerSpecialist .flex{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .containerSpecialist .flex ul{
+        padding-left: 15px;
+    }
+    .containerSpecialist .flex div{
+        width: 100%;
+    }
+    .containerTeam{
+        height: 1200px;
+        padding: 0px;
+    }
+    .containerTeam .team_cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 30px 10px;
+    }
+    .containerTeam .team_cards .card{
+        width: 45%;
+    }
+    .containerTeam .team_cards .card span, .containerTeam .team_cards .card span span, .containerTeam .team_cards .card .team_image{
+        height: 170px;
+    }
+    .containerTeam .team_image{
+        height: 190px !important;
+    }
+
+}

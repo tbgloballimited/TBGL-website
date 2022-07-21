@@ -1,0 +1,112 @@
+ .nav{
+    height: 132px;
+    padding: 0px 50px;
+    background: #87878763;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.mobile_nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+.nav ul li a{
+    margin: 5px 15px;
+    color: #fff;
+}
+
+.cta{
+  height: 50px;
+  min-width: 211px;
+  background-color: #00923f;
+  color: #fff !important;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+}
+.mobile_nav{
+    display: none !important; 
+}
+
+@media (max-width:480px){
+    .nav{
+        padding: 0px;
+        height: 105px;
+        background: transparent;
+        align-items: flex-start;
+        background-color: #fff;
+        position: relative;
+    }
+    .nav ul.nav_links, .nav ul.nav_links li, .cta{
+        display: none;
+    }
+    .logo_anchor{
+        width: 30%;
+    }
+    ul.mobile_nav, .mobile_nav ul{
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .mobile_nav{
+        height: 100vh;
+        width: 70%;
+        padding: 0;
+        justify-content: flex-start !important;
+    }
+    .mobile_nav ul li{
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .mobile_nav summary {
+        align-self: flex-end;
+        justify-self: flex-end;
+        text-align: right;
+        padding-right: 40px;
+    }
+    /* .mobile_nav summary ::marker{
+        font-size: 30px;
+    } */
+    .mobile_nav details{
+        padding-top: 20px;
+        width: 100%;
+    }
+    .mobile_nav details .nav_dropdown{
+        position: absolute;
+        width: 100%;
+        top: 89px;
+        left: 0;
+        color: #000;
+        background-color: #fff;
+        padding: 20px 0px;
+        z-index: 999;
+    }
+    .mobile_nav details .nav_dropdown li a{
+        color: #000;
+    }
+    .mobile_nav ::marker{
+        color: #000;
+        font-size: 30px;
+        content: '\002630';
+    }
+    .nav_dropdown li::marker{
+        color: #fff;
+    }
+  }

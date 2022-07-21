@@ -1,0 +1,405 @@
+.hero{
+    width: 100%;
+    height: 530px;
+    background-image: url('/img/service_hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+.hero_single{
+    width: 100%;
+    height: 530px;
+    background-color: #00923f;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+.heroText{
+    color: #fff;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.breadcrumb{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    align-self: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.heroDescription{
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+.angleIcon{
+    color: #fff;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+.containerServices{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 723px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 0px !important;
+    padding: 0 2rem;
+  }
+  .containerServices ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    gap: 15px;
+    padding-left: 0px;
+    margin-top: 50px;
+  }
+  .containerServices li{
+    list-style: none;
+    width: 285px;
+    height: 380px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px rgba(204, 204, 204, 0.15);
+    position: relative;
+    gap: 0px;
+  }
+  .containerServices .cta{
+    height: 50px;
+    width: 142px;  
+    margin: 10px 0px;
+    padding: 14px 20px;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+    background-color: #00923f;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+  }
+  .containerServices h1{
+    margin-top: 27px;
+  }
+  .containerServices h3{
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  .containerServices li p{
+    margin-bottom: 40px;
+    height: 52px;
+    overflow-y: clip;
+    /* overflow-y: hidden; */
+    position: relative;
+    /* display: none; */
+  }
+  .containerServices li p span{
+      font-size: 14px;
+  }
+  /* .containerServices li p::after{
+    content: '...';
+    position: absolute;
+    right: 11px;
+    bottom: 6px;
+  } */
+
+.service_container{
+    width: 100%;
+    height: 1284px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.service_container h4{
+    color: #00923f;
+}
+.service_grid{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 50px 25px;
+    margin-top: 40px;
+}
+.single_service_box{
+    width: 350px;
+    height: 350px;
+    padding: 30px 90px 30px 30px;
+    border: 1px solid #d5edd4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-self: flex-start;
+    gap: 20px;
+    text-align: left;
+    position: relative;
+}
+.single_service_box p{
+    line-height: 24px;
+    color: #3f3f3f;
+}
+.single_service_box:hover{
+    cursor: pointer;
+    border: 1px solid #ddd;
+    box-shadow: 3px 5px 30px #eee;
+    transition: 0.2s linear;
+}
+.single_service_box .service_icon{
+    width: 49px;
+    height: 49px;
+}
+.single_service_box h5{
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.single_service_box h5:hover{
+    color: #3f3f3f;
+    font-size: 18px;
+    transition: 0.2s linear;
+}
+
+.single_main{
+    width: 100%;
+    height: auto;
+    padding: 114px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 100px;
+}
+.single_list{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.single_list .single_item{
+    background-color: #00923f;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.single_item:hover{
+    background-color: #2ad875;
+    transition: 0.3s linear;
+}
+.single_item h5{
+    color: #fff;
+}
+.single_item h5::after{
+    content: '\203A';
+    font-size: 34px;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+.single_description{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.single_description h4{
+    color: #00923f;
+}
+.single_description img{
+    margin-top: 20px;
+}
+
+.single_process_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 80px;
+}
+.contact_cta{
+    width: 440px;
+    height: 672px;
+    padding: 47px 38px;
+    background-color: #82c583;
+    color: #fff;
+}
+.contact_cta *{
+    margin-bottom: 40px;
+}
+.contact_cta_details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.contact_cta_details span{
+    width: 49px !important;
+    height: 49px !important;
+}
+.contact_cta hr{
+    background-color: #fff;
+}
+.process_list{
+    width: 738px;
+    height: 694px;
+    color: #3f3f3f;
+}
+.process_list h2{
+    color: #000;
+}
+.process_list *{
+    margin-bottom: 24px;
+}
+.process_list_details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 10px;
+}
+.process_list_details p{
+    margin: -20px 120px 40px 60px;
+}
+
+
+@media (max-width:480px){
+    .hero{
+        height: 200px;
+        background-attachment: scroll;
+    }
+    .breadcrumb{
+        margin-top: 20px;
+    }
+    .containerServices ul{
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      gap: 10px;
+    }
+    .service_container, .containerServices{
+        height: auto;
+        padding: 100px 20px;
+    }
+    .service_grid{
+        gap: 25px 0px;
+    }
+
+    .hero_single{
+        height: 200px;
+
+    }
+    .heroText{
+        top: 70px;
+        font-size: 40px;
+    }
+    .hero_single .heroText{
+        top: 0;
+        position: relative;
+        font-size: 24px;
+    }
+    .hero_single .breadcrumb{
+        top: 0;
+        width: 100%;
+        position: relative;
+        font-size: 16px;
+    }
+    .angleIcon{
+        margin-top: 0px;
+    }
+    .heroDescription{
+        font-size: 18px;
+    }
+    .single_main{
+        padding: 100px 20px;
+        gap: 20px;
+    }
+    .single_list, .single_description{
+        width: 100%;
+    }
+    .single_service_box, .containerServices li {
+        width: 80%;
+        height: 320px;
+        padding: 20px;
+    }
+    .single_service_box h3{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .single_service_box p, .containerServices li p{
+        font-size: 14px;
+        line-height: 19px;
+        height: 58px;
+        overflow-y: clip;
+    }
+    .contact_cta{
+        padding: 47px 20px;
+    }
+    .contact_cta p{
+        line-height: 22px;
+    }
+    .single_process_container{
+        height: auto;
+    }
+    .process_list{
+        padding: 0px 20px;
+    }
+    .process_list{
+        height: auto;
+    }
+  }
