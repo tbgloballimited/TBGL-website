@@ -45,7 +45,7 @@ export default function about() {
             <h2>7+ Years Of Service In Solar & Renewable Energy</h2>
           </div>
           <div>
-            <Image src='/img/aboutimg.jpg' alt='tbgl holding panel' height='493' width='430' />        
+            <Image src='/img/aboutimg.jpg' alt='tbgl holding panel' height='430' width='430' />        
           </div>
         </div>
 
@@ -156,7 +156,7 @@ export default function about() {
           <div className={styles.card}>
               <Image src='/img/josiah.png' alt='josiah' height='180' width='170' className={styles.team_image} />
               <h4>SECRETARY & LEGAL ADVISER</h4>
-              <h6>Josiah Ade – agbi, Esq ACArb-UK</h6>
+              <h6>Josiah Ade</h6>
           </div>
 
         </div>

@@ -7,8 +7,16 @@ import Faq from '../../../components/Faq'
 import { server } from '../../../config'
 import Link from 'next/link'
 
+
+
 const service = ({service}) => {
-const images = service.images
+const images = service.gallery
+const single_image = () => {images.map((img, i) => (
+  <div key={i}>
+    <Image src={img.img} width={277} height={199} />
+  </div>
+))}
+console.log(single_image())
   return (
       <>
       {/* <Meta title='Single Services - Tunde Ben Global Limited' /> */}
@@ -44,9 +52,11 @@ const images = service.images
             <p>{service.body}
             </p>
             <div className={styles.image_grid}>
-                {/* {images.map((img) => {
-                <Image src={img} alt='design' height='425' width='346' />
-                })} */}
+                {images.map((img, i) => (
+                  <div key={i}>
+                    <Image src={img.img} width={277} height={199} />
+                  </div>
+                ))}
             </div>
         </div>
         </section>

@@ -253,12 +253,18 @@
     flex-direction: column;
     gap: 30px;
 }
+.image_grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+}
 .single_description h4{
     color: #00923f;
 }
-.single_description img{
+/* .single_description img{
     margin-top: 20px;
-}
+} */
 
 .single_process_container{
     width: 100%;
@@ -372,6 +378,12 @@
     .single_list, .single_description{
         width: 100%;
     }
+    /* .image_grid{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    } */
     .single_service_box, .containerServices li {
         width: 80%;
         height: 320px;

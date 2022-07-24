@@ -7,6 +7,14 @@ export const services = [
       body:
         'We co- develop solar project with our partners RIA ( Renewable In Africa) in London, UK. We source for clients with huge energy demands (200kwatts & above) mostly commercial usage , carry out the loads analysis and develop the projects to meet investors requirements',
       image: '/img/light-bulb.png',
+      gallery: [
+        {img: '/img/development/development2.png'},
+        {img: '/img/development/development3.png'},
+        {img: '/img/development/development4.png'},
+        {img: '/img/development/development1.png'},
+        {img: '/img/development/development5.png'},
+        {img: '/img/development/development6.png'}, 
+      ]
     },
     {
       id: '2',
@@ -15,6 +23,11 @@ export const services = [
       body:
         'We design the solar system base on the load analysis and comes up with the best system to perfectly fit into the loads profile.',
       image: '/img/solar-panel.png',
+      gallery: [
+        {img: '/img/design/design1.png'},
+        {img: '/img/design/design2.png'},
+        {img: '/img/design/design3.png'},
+      ]
     },
     {
       id: '3',
@@ -25,6 +38,11 @@ export const services = [
         'At this stage, the design of the system is interpreted and procurement of the component are made, follow by construction of the whole system and commissioning by our team.This stage takes between 1week  – 6months or more depending on the size and capacity of the solar projects.',
         image: 
           '/img/house.png',
+        gallery: [
+          {img: '/img/construction/procurement1.png'},
+          {img: '/img/construction/construction2.png'},
+          {img: '/img/construction/construction3.png'},
+        ]
     },
     {
       id: '4',
@@ -35,6 +53,12 @@ export const services = [
         'This is carried out mostly quarterly or bi- annually after commissioning of the solar system to ensure maximum efficiency & effectiveness of the solar system.',
       image: 
       '/img/under-maintenance-black.png',
+      gallery: [
+        {img: '/img/maintenance/operation1.png'},
+        {img: '/img/maintenance/operation2.png'},
+        {img: '/img/maintenance/operation3.png'},
+        {img: '/img/maintenance/operation4.png'},
+      ]
     }
   ]
 
