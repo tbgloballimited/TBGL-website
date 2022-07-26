@@ -12,7 +12,6 @@ import { testimonials } from '../../../data'
 const projects = ({project}) => {
   return (
       <>
-      
     <section className={styles.single_hero} style={{backgroundImage: `url(${project.images})`}}>
         <div className='overlay'></div>
         <h1 className={styles.heroText}>{project.title}</h1>
@@ -67,7 +66,6 @@ const projects = ({project}) => {
             <br />
             <div className={styles.project_image_grid}>
                 <Image src={project.images} alt='design' height='320' width='320' className={styles.project_image} />
-                
             </div>
           </div>
         </section>

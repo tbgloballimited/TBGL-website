@@ -45,7 +45,7 @@ export default function about() {
             <h2>7+ Years Of Service In Solar & Renewable Energy</h2>
           </div>
           <div>
-            <Image src='/img/aboutimg.jpg' alt='tbgl holding panel' height='430' width='430' />        
+            <Image src='/img/aboutimg.jpg' alt='tbgl holding panel' height='430' width='430' />  
           </div>
         </div>
 
@@ -161,7 +161,6 @@ export default function about() {
 
         </div>
       </div>
-
       {/* <Faq /> */}
 
       <FooterCta />

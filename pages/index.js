@@ -85,6 +85,7 @@ export default function Home({services, projects, products}) {
     </div>
 
     <Clients />
+    {/* <Testimonial testimonials={testimonials} /> */}
     <WhyChooseUs />
     <FooterCta />
     <Footer />

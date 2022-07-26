@@ -262,9 +262,9 @@
 .single_description h4{
     color: #00923f;
 }
-/* .single_description img{
+.single_description img{
     margin-top: 20px;
-} */
+}
 
 .single_process_container{
     width: 100%;
@@ -292,7 +292,6 @@
     justify-content: flex-start;
     gap: 20px;
 }
-
 .contact_cta_details span{
     width: 49px !important;
     height: 49px !important;
@@ -323,7 +322,6 @@
     margin: -20px 120px 40px 60px;
 }
 
-
 @media (max-width:480px){
     .hero{
         height: 200px;
@@ -331,6 +329,10 @@
     }
     .breadcrumb{
         margin-top: 20px;
+    }
+    .containerServices{
+        min-height: 800px;
+        padding: 10px;
     }
     .containerServices ul{
       display: flex;

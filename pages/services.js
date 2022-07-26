@@ -30,8 +30,6 @@ const services = ({services}) => {
   )
 }
 
-
-
 export const getStaticProps = async () => {
   const res_service =  await fetch
   (`${server}/api/services`)
@@ -43,5 +41,4 @@ export const getStaticProps = async () => {
     }
   }
 }
-
 export default services

@@ -1,4 +1,5 @@
 import styles from '../styles/Nav.module.css'
+import navStyles from '../styles/Nav.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 

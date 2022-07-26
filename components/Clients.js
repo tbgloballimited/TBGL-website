@@ -24,7 +24,7 @@ const Clients = () => {
             </li>
             <li>
             <Image src='/img/oopl_logo.png' alt="oopl logo" height='152' width='158' />
-            </li>s
+            </li>
         </ul>
         </div>
     </>
