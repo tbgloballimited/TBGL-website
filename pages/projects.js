@@ -10,7 +10,7 @@ import Link from 'next/link'
 import ProjectList from '../components/ProjectList'
 import {server} from '../config'
 import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/projects.md';
+import { attributes } from '../content/projects.md';
 import Head from 'next/head'
 import Script from 'next/script'
 

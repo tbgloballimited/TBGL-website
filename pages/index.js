@@ -93,29 +93,29 @@ export default function Home({services, projects, products}) {
   )
 }
 
-export const getStaticProps = async () => {
-  const res_service =  await fetch
-  (`${server}/api/services`)
-  const services = await res_service.json()
+// export const getStaticProps = async () => {
+//   const res_service =  await fetch
+//   (`${server}/api/services`)
+//   const services = await res_service.json()
   
 
-  const res_project =  await fetch
-  (`${server}/api/projects`)
-  const projects = await res_project.json()
+//   const res_project =  await fetch
+//   (`${server}/api/projects`)
+//   const projects = await res_project.json()
 
-  // const res_testimonial =  await fetch
-  // (`${server}/api/testimonials`)
-  // const testimonials = await res_testimonial.json()
+//   // const res_testimonial =  await fetch
+//   // (`${server}/api/testimonials`)
+//   // const testimonials = await res_testimonial.json()
 
-  const res_product =  await fetch
-  (`${server}/api/products`)
-  const products = await res_product.json()
+//   const res_product =  await fetch
+//   (`${server}/api/products`)
+//   const products = await res_product.json()
 
-  return {
-    props:{
-      services,
-      projects,
-      products
-    },
-  }
-}
+//   return {
+//     props:{
+//       services,
+//       projects,
+//       products
+//     },
+//   }
+// }

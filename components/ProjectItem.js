@@ -18,7 +18,7 @@ const ProjectItem = ({projects}) => {
   )
 }
 
-export const getStaticPaths = async() => {
+export const getStaticProps = async() => {
   const res = await fetch(`${server}/api/projects`)
   const projects= await res.json()
   const ids = projects.map((project) => project.id)

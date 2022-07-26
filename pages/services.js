@@ -30,15 +30,15 @@ const services = ({services}) => {
   )
 }
 
-export const getStaticProps = async () => {
-  const res_service =  await fetch
-  (`${server}/api/services`)
-  const services = await res_service.json()
+// export const getStaticProps = async () => {
+//   const res_service =  await fetch
+//   (`${server}/api/services`)
+//   const services = await res_service.json()
   
-  return {
-    props:{
-      services
-    }
-  }
-}
+//   return {
+//     props:{
+//       services
+//     }
+//   }
+// }
 export default services
