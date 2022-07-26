@@ -36,7 +36,7 @@ const products = ({products}) => {
   )
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
     const res_product =  await fetch
     (`${server}/api/products`)
     const products = await res_product.json()

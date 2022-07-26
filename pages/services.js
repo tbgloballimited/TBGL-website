@@ -30,7 +30,7 @@ const services = ({services}) => {
   )
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res_service =  await fetch
   (`${server}/api/services`)
   const services = await res_service.json()
