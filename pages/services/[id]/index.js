@@ -15,7 +15,6 @@ const single_image = () => {images.map((img, i) => (
     <Image src={img.img} width={277} height={199} />
   </div>
 ))}
-console.log(single_image())
   return (
       <>
       {/* <Meta title='Single Services - Tunde Ben Global Limited' /> */}
@@ -66,8 +65,20 @@ console.log(single_image())
   )
 }
 
-export const getServerSideProps = async (context) => {
-    const res = await fetch (`${server}/api/services/${context.params.id}`)
+export async function getStaticPaths() {
+  const res = await fetch(`${server}/api/services`)
+
+ 
+  const services = await res.json()
+
+  const paths = services.map((service) => ({
+    params: { id: service.id.toString() },
+  }))
+
+  return { paths, fallback: false }
+}
+export const getStaticProps = async (params) => {
+    const res = await fetch (`${server}/api/services/${params.id}`)
     const service = await res.json()
     
     return {

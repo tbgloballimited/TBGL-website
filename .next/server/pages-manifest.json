@@ -1,6 +1,21 @@
 {
-  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/contact": "pages/contact.js"
+  "/api/projects/[id]": "pages/api/projects/[id].js",
+  "/api/projects": "pages/api/projects.js",
+  "/api/products/[id]": "pages/api/products/[id].js",
+  "/about": "pages/about.js",
+  "/api/services": "pages/api/services.js",
+  "/api/services/[id]": "pages/api/services/[id].js",
+  "/api/testimonials/[id]": "pages/api/testimonials/[id].js",
+  "/api/products": "pages/api/products.js",
+  "/api/testimonials": "pages/api/testimonials.js",
+  "/contact": "pages/contact.js",
+  "/projects": "pages/projects.js",
+  "/products": "pages/products.js",
+  "/projects/[id]": "pages/projects/[id].js",
+  "/": "pages/index.js",
+  "/services/[id]": "pages/services/[id].js",
+  "/services": "pages/services.js"
 }

@@ -38,7 +38,7 @@ export default function Home({services, projects, products}) {
         <button className={styles.cta}>MORE ABOUT US</button>
       </div>
     </div>
-     <ServiceList services={services} /> 
+     {/* <ServiceList services={services} />  */}
 
     
     <section className={styles.containerProjects}>
@@ -47,9 +47,9 @@ export default function Home({services, projects, products}) {
         <h4 style={{color: '#848484', fontWeight:'normal'}}>We have built a wide range of independent power 
         <br />generating systems</h4>
         <ul>
-          {projects.map((project) => (
+          {/* {projects.map((project) => (
             <ProjectItem key={project.id} projects={project} />
-          ))}
+          ))} */}
         </ul>
     </section>
 
@@ -58,7 +58,7 @@ export default function Home({services, projects, products}) {
       <h1>Shop With Us</h1>
       <h4>Browse through some of our vetted <br /> products from trusted brands</h4>
       <br />
-      <ProductList products={products} />
+      {/* <ProductList products={products} /> */}
     </section>
     <div className={styles.containerProcess}>
       <h4 style={{color: '#00923f'}}>OUR PROCESS</h4>
@@ -84,7 +84,7 @@ export default function Home({services, projects, products}) {
       </ul>
     </div>
 
-    <Clients />
+    {/* <Clients /> */}
     {/* <Testimonial testimonials={testimonials} /> */}
     <WhyChooseUs />
     <FooterCta />
@@ -93,7 +93,7 @@ export default function Home({services, projects, products}) {
   )
 }
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const res_service =  await fetch
   (`${server}/api/services`)
   const services = await res_service.json()

@@ -28,7 +28,7 @@ const products = ({products}) => {
                 <li>50K WATTS</li>
                 <li>100K WATTS</li>
             </ul>
-            <ProductList products={products} />
+            {/* <ProductList products={products} /> */}
         </section>
         <FooterCta />
         <Footer />
@@ -36,11 +36,11 @@ const products = ({products}) => {
   )
 }
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
     const res_product =  await fetch
     (`${server}/api/products`)
     const products = await res_product.json()
-  
+    console.log(products)
     return {
       props:{
         products

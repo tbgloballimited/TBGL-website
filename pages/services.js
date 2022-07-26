@@ -22,7 +22,7 @@ const services = ({services}) => {
           </div>
         </div>
       </section>
-     <ServiceList services={services} /> 
+     {/* <ServiceList services={services} />  */}
       {/* <Faq /> */}
       <FooterCta />
       <Footer />
@@ -30,7 +30,7 @@ const services = ({services}) => {
   )
 }
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const res_service =  await fetch
   (`${server}/api/services`)
   const services = await res_service.json()

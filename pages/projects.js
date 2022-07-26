@@ -9,11 +9,17 @@ import Clients from '../components/Clients'
 import Link from 'next/link'
 import ProjectList from '../components/ProjectList'
 import {server} from '../config'
+import { Component } from 'react'
+import { attributes, react as HomeContent } from '../content/projects.md';
+import Head from 'next/head'
+import Script from 'next/script'
 
-const projects = ({projects}) => {
+const projects = () => {
+  let { title, cats } = attributes;
   return (
     <>
     <Meta title='Projects | Tunde Ben Global Limited' />
+        <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
     
         <section className={styles.hero} >
           <div className='overlay'>
@@ -32,7 +38,19 @@ const projects = ({projects}) => {
             towards our employees, clients, businesses, partners, 
             as we as the wider community in which we operate.
             </p>
-            <ProjectList projects={projects} />
+
+        <article>
+          <h1>{title}</h1>
+          <ul>
+            {cats.map((cat, k) => (
+              <li key={k}>
+                <h2>{cat.name}</h2>
+                <p>{cat.description}</p>
+              </li>
+            ))}
+          </ul>
+        </article>
+            {/* <ProjectList projects={projects} /> */}
         </section>
 
         <WhyChooseUs />
@@ -43,16 +61,15 @@ const projects = ({projects}) => {
   )
 }
 
-export const getServerSideProps = async () => {
-  const res_project =  await fetch
-  (`${server}/api/projects`)
-  const projects = await res_project.json()
-
-  return {
-    props:{
-      projects
-    },
-  }
-}
+// export const getStaticProps = async () => {
+//   const res_project =  await fetch
+//   (`${server}/api/projects`)
+//   const projects = await res_project.json()
+//   return {
+//     props:{
+//       projects
+//     },
+//   }
+// }
 
 export default projects
