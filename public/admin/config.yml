@@ -4,19 +4,38 @@ backend:
 media_folder: public/img
 public_folder: img
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "content"
+    label: "Content"
     files:
-    - label: "Home"
-      name: "home"
-      file: "content/home.md"
+    - label: "Projects"
+      name: "projects"
+      file: "content/projects.md",
+      create: true
       fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "datetime" }
-        - { label: "Body", name: "body", widget: "markdown"}
-        - label: 'Cats'
-          name: "cats"
-          widget: list
-          fields:
-            - { label: "Name", name: "name", widget: "string"}
-            - { label: "Description", name: "description", widget: "text"}
+        - {label: "title", name: "title", widget: "string"}
+        - {label: 'Facility power', name: "facility_power", widget: "string"}
+        - {label: 'Completion', name: "completion", widget: "string"}
+        - {label: 'Module technology', name: "module_technology", widget: "string"}
+        - {label: 'Inverter', name: "inverter", widget: "string"}
+        - {label: 'Carbon', name: "carbon_footprint_reduced", widget: "string"}
+        - {label: 'Images', name: "images", widget: "string"}
+        - {label: 'Body', name: "body", widget: "markdown"}
+    - label: "Services"
+      name: "services"
+      file: "content/services.md",
+      create: true
+      fields:
+        - {label: "title", name: "title", widget: "string"}
+        - {label: 'excerpt', name: "excerpt", widget: "string"}
+        - {label: 'Images', name: "images", widget: "string"}
+        - {label: 'Body', name: "body", widget: "markdown"}
+    - label: "Products"
+      name: "products"
+      file: "content/products.md",
+      create: true
+      fields:
+        - {label: "title", name: "title", widget: "string"}
+        - {label: 'description', name: "description", widget: "string"}
+        - {label: 'price', name: "price", widget: "string"}
+        - {label: 'Images', name: "images", widget: "string"}
+        - {label: 'Body', name: "body", widget: "markdown"}

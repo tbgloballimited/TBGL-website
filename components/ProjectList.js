@@ -1,20 +1,15 @@
 import styles from '../styles/Project.module.css'
 import ProjectItem from './ProjectItem'
 
-const ProjectList = ({projects}) => {
+const ProjectList = ({projects, data, content}) => {
+  // let { id, title, project_details, project_scope } = attributes;
   return (
     <>      
-    <div className={styles.containerProject}>
-  
-      <ul>
-        {projects.map((project) => (
-          <ProjectItem key={project.id} projects={project} />
-        ))}
-      </ul>
-    </div>
     </>
     
   )
 }
+
+
 
 export default ProjectList

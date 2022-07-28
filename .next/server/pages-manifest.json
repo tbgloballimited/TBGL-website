@@ -2,21 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/about": "pages/about.html",
-  "/api/products/[id]": "pages/api/products/[id].js",
-  "/api/products": "pages/api/products.js",
-  "/api/projects/[id]": "pages/api/projects/[id].js",
-  "/api/projects": "pages/api/projects.js",
-  "/api/services/[id]": "pages/api/services/[id].js",
-  "/api/services": "pages/api/services.js",
-  "/api/testimonials/[id]": "pages/api/testimonials/[id].js",
-  "/api/testimonials": "pages/api/testimonials.js",
-  "/contact": "pages/contact.html",
-  "/projects/[id]": "pages/projects/[id].html",
-  "/services/[id]": "pages/services/[id].html",
-  "/products": "pages/products.js",
-  "/services": "pages/services.html",
-  "/": "pages/index.html",
-  "/projects": "pages/projects.html",
-  "/404": "pages/404.html"
+  "/services": "pages/services.js",
+  "/services/[slug]": "pages/services/[slug].js"
 }

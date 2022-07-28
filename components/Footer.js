@@ -9,28 +9,28 @@ const Footer = () => {
                 <ul>
                     <li>Services</li>
                     <li>
-                        <Link href='/services/1'>
+                        <Link href='/services/development'>
                             <span>
                                 Development
                             </span>
                         </Link>
                     </li>
                     <li>
-                        <Link href='/services/2'>
+                        <Link href='/services/design'>
                             <span>
                                 Design
                             </span>
                         </Link>
                     </li>
                     <li>
-                        <Link href='/services/3'>
+                        <Link href='/services/epc'>
                             <span>
                                 EPC
                             </span>
                         </Link>
                     </li>
                     <li>
-                        <Link href='/services/4'>
+                        <Link href='/services/oandm'>
                             <span>
                                 O&M
                             </span>
