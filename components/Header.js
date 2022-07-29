@@ -1,19 +1,31 @@
 import styles from '../styles/Header.module.css'
+import Youtube from 'react-youtube'
 // import bgVideo from '/videos/3dbg.mp4'
 
 const Header = () => {
+
+  const opts = {
+    height: "700",
+    width: "100%",
+    playerVars: {
+      autoplay: 1,
+      controls: 1,
+      muted: 1
+    },
+  }
 
   return (
       <>
         <section className={styles.hero} >
           <div className='overlay'></div>
-          <video 
+          {/* <video 
           autoPlay
           loop 
           muted 
           className={styles.video_bg}>
-            <source src='/videos/3dbg.mp4' type='video/mp4' />
-          </video>
+            <source src='https://youtu.be/mXFFof1w-Gw' type='video/mp4' />
+          </video> */}
+          <Youtube videoId="mXFFof1w-Gw" opts={opts} />
           {/* <Video src={videobg} autoPlay loop muted playsInline className={styles.video_bg}/> */}
           <div className={styles.slide_container}>
             <div className={styles.hero_container}>
