@@ -130,14 +130,14 @@
 
   .containerProcess{
     width: 100%;
-    height: 657px;
+    height: auto;
     flex-grow: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 0 2rem;
+    padding: 100px 2rem;
   }
   .containerProcess ul{
     width: 100%;
@@ -151,7 +151,7 @@
     text-align: center;
     list-style: none;
     width: 224px;
-    height: 208px;
+    height: auto;
   }
   .containerProcess li:nth-child(2), .containerProcess li:nth-child(4){
     margin-top:100px;
@@ -274,10 +274,6 @@
     height: 1600px;
   }
 
-  .containerProcess{
-    height: 900px;
-    padding: 20px;
-  }
   .containerProcess ul{
     width: 100%;
     margin-top: 50px;
@@ -292,15 +288,12 @@
   }
   .containerProcess li{
     width: 47%;
-    border: 1px solid #00923f38;
     padding: 20px;
-    min-height: 250px;
     gap: 20px 30px;
     padding-left: 0px;
   }
   .containerProcess li{
     width: 44%;
-    border: 1px solid #00923f38;
     padding: 20px;
     height: auto;
   }
@@ -330,14 +323,21 @@
   }
 
   .containerWhy{
-    height: 1200px;
-    padding: 0px;
+    height: auto;
+    padding: 100px 0px;
   }
   .WhyDescription h4, .WhyDescription h4:nth-child(3){
     position: relative;
     width: 100%;
     padding: 50px;
     text-align: center;
+  }
+  .containerProjects h4, .containerProjects h1{
+    padding-left: 20px;
+  }
+  .containerProcess{
+    height: auto;
+    padding: 100px 20px;
   }
 
 }

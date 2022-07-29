@@ -1,6 +1,6 @@
 ---
 title: Operating & Maintenance
-excerpt: 'We maintain based on region, clients needs, clients budget, nature of projects and environmental factors.'
+excerpt: 'This is carried out quarterly or bi-annually after the commissioning of the solar system to ensure maximum efficiency & effectiveness of the solar power.'
 gallery:
   - '/img/maintenance/operation1.png'
   - '/img/maintenance/operation2.png'
@@ -8,7 +8,4 @@ gallery:
   - '/img/maintenance/operation4.png'
 ---
 
-  TBGL commissioned a 2MW hybrid solar carport system for OOPL & Green Legacy Resort in December 2021 using cells & modules manufactured by Jinko Solar. 
-  
-  The project was built on the car park space of the hotel & resort and serves as a car park for guest cars. 
-  The hybrid solar carport system was completed in a record time of 6 months and was commissioned in December 2021.
+  This is carried out quarterly or bi-annually after the commissioning of the solar system to ensure maximum efficiency & effectiveness of the solar power.

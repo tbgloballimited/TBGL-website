@@ -53,6 +53,15 @@
     margin-top: 5px;
 }
 
+.containerProducts{
+    text-align: center;
+    height: auto;
+    padding: 100px 0px;
+}
+.containerProducts h4{
+    color: #848484;
+    font-weight: normal;
+}
 .product_main{
     width: 100%;
     height: auto;
@@ -157,6 +166,10 @@
     .breadcrumb .heroDescription{
         font-size: 18px;
         margin-top: 5px;
+    }
+    .containerProducts{
+        padding: 10px 20px;
+        text-align: center;
     }
     .product_grid{
         width: 100%;

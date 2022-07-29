@@ -1,6 +1,6 @@
 ---
 title: Development
-excerpt: 'We develop based on region, clients needs, clients budget, nature of projects and environmental factors.'
+excerpt: 'In project development, we co-develop a solar project with our partners; RIA ( Renewable In Africa) in London UK.'
 gallery: 
   - '/img/development/development2.png'
   - '/img/development/development3.png'
@@ -11,7 +11,4 @@ gallery:
 
 ---
 
-  TBGL commissioned a 2MW hybrid solar carport system for OOPL & Green Legacy Resort in December 2021 using cells & modules manufactured by Jinko Solar. 
-  
-  The project was built on the car park space of the hotel & resort and serves as a car park for guest cars. 
-  The hybrid solar carport system was completed in a record time of 6 months and was commissioned in December 2021.
+  In project development, we co-develop a solar project with our partners; RIA ( Renewable In Africa) in London UK. We source for clients with huge energy demands (200kwatts & above) mostly commercial usage, carry out the load analysis and develop the projects to meet investors' requirements.

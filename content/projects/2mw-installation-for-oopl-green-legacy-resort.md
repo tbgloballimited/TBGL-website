@@ -19,7 +19,7 @@ images: '/img/2mw.png'
 
   #### Construction Of The Solar Car Port.  
 
-  Our team adopted special techniques in the Solar carport design to fit the car park spaces and also to be able to support the weight of the PV modules, at the car port height of 2.5meters. 
+  The 2mega watts hybrid solar system supplies power to the whole OOPL. It works synchronically with the grid/ PHCN and Generator.
 
   #### Maintaining Site Ecology. 
 

@@ -1,23 +1,27 @@
 import styles from '../styles/Header.module.css'
-import Youtube from 'react-youtube'
+// import Youtube from 'react-youtube'
+import { Video, CloudinaryContext } from "cloudinary-react";
+import { useRef } from "react";
 // import bgVideo from '/videos/3dbg.mp4'
 
 const Header = () => {
 
-  const opts = {
-    height: "700",
-    width: "100%",
-    playerVars: {
-      autoplay: 1,
-      controls: 1,
-      muted: 1
-    },
-  }
+  // const opts = {
+  //   height: "700",
+  //   width: "100%",
+  //   playerVars: {
+  //     autoPlay: 1,
+  //     controls: 1,
+  //     muted: 1,
+  //     loop: 1
+  //   },
+  // }
 
+  const videoRef = useRef();
   return (
       <>
         <section className={styles.hero} >
-          <div className='overlay'></div>
+          {/* <div className='overlay'></div> */}
           {/* <video 
           autoPlay
           loop 
@@ -25,7 +29,23 @@ const Header = () => {
           className={styles.video_bg}>
             <source src='https://youtu.be/mXFFof1w-Gw' type='video/mp4' />
           </video> */}
-          <Youtube videoId="mXFFof1w-Gw" opts={opts} />
+
+          <CloudinaryContext cloud_name="tbgl">
+            <div className={styles.carousel_image}>
+              <Video
+                publicId="3dbg_axk9th"
+                width="100%"
+                controls={false}
+                autoPlay={true}
+                loop={true}
+                innerRef={videoRef}
+                height="100%"
+                muted={true}
+                style={{objectFit: 'cover'}}
+              />
+            </div>
+          </CloudinaryContext>
+          {/* <Youtube videoId="mXFFof1w-Gw" opts={opts} /> */}
           {/* <Video src={videobg} autoPlay loop muted playsInline className={styles.video_bg}/> */}
           <div className={styles.slide_container}>
             <div className={styles.hero_container}>

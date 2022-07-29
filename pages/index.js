@@ -12,6 +12,7 @@ import path, { parse } from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
 import { useEffect } from 'react'
+import ServiceList from '../components/ServiceList'
 
 
 export default function Home({slugs, slugs_proj, data1, data2, data3, dataa1, dataa2, dataa3, dataa4, dataa5, dataa6}) {
@@ -50,7 +51,7 @@ export default function Home({slugs, slugs_proj, data1, data2, data3, dataa1, da
         <button className={styles.cta}>MORE ABOUT US</button>
       </div>
     </div>
-     {/* <ServiceList services={services} />  */}
+     <ServiceList /> 
 
     
     <section className={styles.containerProjects}>
@@ -111,7 +112,7 @@ export default function Home({slugs, slugs_proj, data1, data2, data3, dataa1, da
           ))} */}
     </section>
 
-    <section className={styles2.containerProducts} style={{padding: '0px 0px 150px 50px'}}>
+    <section className={styles2.containerProducts}>
       <h4 style={{color: '#00923f'}}>PRODUCTS</h4>
       <h1>Shop With Us</h1>
       <h4>Browse through some of our vetted <br /> products from trusted brands</h4>
