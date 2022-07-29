@@ -45,8 +45,8 @@ const projects = ({contents, data}) => {
             <h2>{data.title}</h2>
             <div dangerouslySetInnerHTML={{ __html:contents }} />
             <div className={styles.image_grid}>
-                {data.gallery.map((image) => (
-                    <Image src={image} alt='design' height='210' width='270' />
+                {data.gallery.map((image, index) => (
+                    <Image key={index} src={image} alt='design' height='210' width='270' />
                 ))}
             </div>
         </div>

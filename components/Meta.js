@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Script from 'next/script'
 
 const Meta = ({title, keywords, description}) => {
   return (
@@ -11,7 +10,6 @@ const Meta = ({title, keywords, description}) => {
         <meta charSet='utf-8' />
         <link rel='icon' href='/favicon.ico' />
         <title>{title}</title>
-        <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       </Head>
     </>
   )
